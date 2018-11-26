@@ -16,7 +16,10 @@
 		A835FA3421A5381700EB8E26 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FA3321A5381700EB8E26 /* SettingViewController.swift */; };
 		A835FA3621A53A9000EB8E26 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FA3521A53A9000EB8E26 /* TableViewController.swift */; };
 		A835FA3B21A566DA00EB8E26 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = A835FA3A21A566DA00EB8E26 /* BMHANNA_11yrs_otf.otf */; };
-		A835FA3D21A56DC100EB8E26 /* Screen Shot 2018-11-21 at 7.38.38 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = A835FA3C21A56DC100EB8E26 /* Screen Shot 2018-11-21 at 7.38.38 PM.png */; };
+		C450BF1021AB80F7002B8976 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450BF0F21AB80F7002B8976 /* CollectionViewController.swift */; };
+		C450BF1321AB832C002B8976 /* restaurantPic in Resources */ = {isa = PBXBuildFile; fileRef = C450BF1221AB832B002B8976 /* restaurantPic */; };
+		C450BF1521AB8337002B8976 /* launchScreenText.png in Resources */ = {isa = PBXBuildFile; fileRef = C450BF1421AB8337002B8976 /* launchScreenText.png */; };
+		C450BF1721AB8600002B8976 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450BF1621AB8600002B8976 /* CollectionViewCell.swift */; };
 		C4A74CB621A5715300F22407 /* BMHANNAAir_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4A74CB521A5715300F22407 /* BMHANNAAir_otf.otf */; };
 		C4A74CB821A577D400F22407 /* ReservationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A74CB721A577D400F22407 /* ReservationTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +36,10 @@
 		A835FA3321A5381700EB8E26 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A835FA3521A53A9000EB8E26 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A835FA3A21A566DA00EB8E26 /* BMHANNA_11yrs_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNA_11yrs_otf.otf; sourceTree = "<group>"; };
-		A835FA3C21A56DC100EB8E26 /* Screen Shot 2018-11-21 at 7.38.38 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-11-21 at 7.38.38 PM.png"; sourceTree = "<group>"; };
+		C450BF0F21AB80F7002B8976 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		C450BF1221AB832B002B8976 /* restaurantPic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = restaurantPic; sourceTree = "<group>"; };
+		C450BF1421AB8337002B8976 /* launchScreenText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchScreenText.png; sourceTree = "<group>"; };
+		C450BF1621AB8600002B8976 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		C4A74CB521A5715300F22407 /* BMHANNAAir_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNAAir_otf.otf; sourceTree = "<group>"; };
 		C4A74CB721A577D400F22407 /* ReservationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +74,8 @@
 		A835FA1E21A535F400EB8E26 /* seeksha */ = {
 			isa = PBXGroup;
 			children = (
-				A835FA3C21A56DC100EB8E26 /* Screen Shot 2018-11-21 at 7.38.38 PM.png */,
+				C450BF1221AB832B002B8976 /* restaurantPic */,
+				C450BF1421AB8337002B8976 /* launchScreenText.png */,
 				A835FA3521A53A9000EB8E26 /* TableViewController.swift */,
 				A835FA1F21A535F400EB8E26 /* AppDelegate.swift */,
 				A835FA2121A535F400EB8E26 /* ViewController.swift */,
@@ -79,7 +86,9 @@
 				A835FA2B21A535F700EB8E26 /* Info.plist */,
 				A835FA3321A5381700EB8E26 /* SettingViewController.swift */,
 				C4A74CB721A577D400F22407 /* ReservationTableViewController.swift */,
+				C450BF0F21AB80F7002B8976 /* CollectionViewController.swift */,
 				A835FA3721A5618E00EB8E26 /* Font */,
+				C450BF1621AB8600002B8976 /* CollectionViewCell.swift */,
 			);
 			path = seeksha;
 			sourceTree = "<group>";
@@ -153,10 +162,11 @@
 			files = (
 				A835FA3B21A566DA00EB8E26 /* BMHANNA_11yrs_otf.otf in Resources */,
 				A835FA2A21A535F700EB8E26 /* LaunchScreen.storyboard in Resources */,
+				C450BF1321AB832C002B8976 /* restaurantPic in Resources */,
 				A835FA2721A535F700EB8E26 /* Assets.xcassets in Resources */,
-				A835FA3D21A56DC100EB8E26 /* Screen Shot 2018-11-21 at 7.38.38 PM.png in Resources */,
 				C4A74CB621A5715300F22407 /* BMHANNAAir_otf.otf in Resources */,
 				A835FA2521A535F400EB8E26 /* Main.storyboard in Resources */,
+				C450BF1521AB8337002B8976 /* launchScreenText.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,8 +179,10 @@
 			files = (
 				A835FA2221A535F400EB8E26 /* ViewController.swift in Sources */,
 				A835FA2021A535F400EB8E26 /* AppDelegate.swift in Sources */,
+				C450BF1721AB8600002B8976 /* CollectionViewCell.swift in Sources */,
 				C4A74CB821A577D400F22407 /* ReservationTableViewController.swift in Sources */,
 				A835FA3221A537E700EB8E26 /* ReservationViewController.swift in Sources */,
+				C450BF1021AB80F7002B8976 /* CollectionViewController.swift in Sources */,
 				A835FA3621A53A9000EB8E26 /* TableViewController.swift in Sources */,
 				A835FA3421A5381700EB8E26 /* SettingViewController.swift in Sources */,
 			);

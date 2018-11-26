@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2018-11-21 at 7.38.38 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="WSy-Wm-mPF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenText.png" translatesAutoresizingMaskIntoConstraints="NO" id="WSy-Wm-mPF">
                                 <rect key="frame" x="8" y="199" width="359" height="269"/>
                             </imageView>
                         </subviews>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2018-11-21 at 7.38.38 PM.png" width="694" height="576"/>
+        <image name="launchScreenText.png" width="694" height="576"/>
     </resources>
 </document>
