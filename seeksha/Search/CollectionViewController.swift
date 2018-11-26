@@ -12,9 +12,11 @@ private let reuseIdentifier = "Cell"
 
 class CollectionViewController: UICollectionViewController {
 
+    var items: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        restaurantDataSize(_count: 8)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -25,6 +27,7 @@ class CollectionViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
     }
 
+ 
     /*
     // MARK: - Navigation
 
@@ -34,12 +37,20 @@ class CollectionViewController: UICollectionViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func restaurantDataSize(_count: Int){
+        for i in 1..._count{
+            items.append("\(i)")
+        }
+        
+    }
+    
 
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 3
     }
 
 
@@ -49,13 +60,11 @@ class CollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as! CollectionViewCell
     
-        //let image:UIImage - UIImage(named: uroonge.jpg)
         // Configure the cell
-        let imageView: UIImageView = UIImageView(image: UIImage(named:"uroonge.jpg"))
     
-        cell.contentView.addSubview(imageView)
+        cell.resLabel.text = items[indexPath.item]
         return cell
     }
 

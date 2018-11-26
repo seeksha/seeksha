@@ -32,7 +32,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="122" height="122"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qd5-Ca-4uk">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Test.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qd5-Ca-4uk">
                                             <rect key="frame" x="0.0" y="0.0" width="122" height="84"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSd-EQ-0Lo">
@@ -54,8 +54,8 @@
                                     <constraint firstItem="qd5-Ca-4uk" firstAttribute="leading" secondItem="mSd-EQ-0Lo" secondAttribute="leading" id="zgC-x0-Jll"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="resImage" destination="qd5-Ca-4uk" id="3Zd-1a-msV"/>
-                                    <outlet property="resLabel" destination="mSd-EQ-0Lo" id="QRD-cE-hSV"/>
+                                    <outlet property="resImage" destination="qd5-Ca-4uk" id="FsQ-fe-qx1"/>
+                                    <outlet property="resLabel" destination="mSd-EQ-0Lo" id="sT9-hO-DbJ"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -205,4 +205,7 @@
             <point key="canvasLocation" x="-262" y="835"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Test.jpg" width="750" height="428"/>
+    </resources>
 </document>

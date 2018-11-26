@@ -19,15 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenText.png" translatesAutoresizingMaskIntoConstraints="NO" id="WSy-Wm-mPF">
-                                <rect key="frame" x="8" y="199" width="359" height="269"/>
+                                <rect key="frame" x="42.5" y="218.5" width="290" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="766-kv-w1n"/>
+                                    <constraint firstAttribute="width" constant="290" id="C6F-53-C0S"/>
+                                    <constraint firstAttribute="width" secondItem="WSy-Wm-mPF" secondAttribute="height" multiplier="29:23" id="Qi3-6f-DQG"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.85882352941176465" green="0.24313725490196078" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="WSy-Wm-mPF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="5hR-oY-IA2"/>
-                            <constraint firstItem="WSy-Wm-mPF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Gj2-5a-cQG"/>
-                            <constraint firstItem="WSy-Wm-mPF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="179" id="P4P-VG-qJQ"/>
-                            <constraint firstItem="WSy-Wm-mPF" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dbK-Nb-up8"/>
+                            <constraint firstItem="WSy-Wm-mPF" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Qpv-iU-JiC"/>
+                            <constraint firstItem="WSy-Wm-mPF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wDY-0b-3Sy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

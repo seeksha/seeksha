@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A826A8B221ABD09E00756540 /* Test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A826A8B121ABD09D00756540 /* Test.jpg */; };
 		A835FA2021A535F400EB8E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FA1F21A535F400EB8E26 /* AppDelegate.swift */; };
 		A835FA2221A535F400EB8E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FA2121A535F400EB8E26 /* ViewController.swift */; };
 		A835FA2521A535F400EB8E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A835FA2321A535F400EB8E26 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A826A8B121ABD09D00756540 /* Test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Test.jpg; path = seeksha/Search/Test.jpg; sourceTree = SOURCE_ROOT; };
 		A835FA1C21A535F400EB8E26 /* seeksha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seeksha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A835FA1F21A535F400EB8E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A835FA2121A535F400EB8E26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A826A8B321ABD11C00756540 /* My Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				C4A74CB721A577D400F22407 /* ReservationTableViewController.swift */,
+				A835FA3521A53A9000EB8E26 /* TableViewController.swift */,
+				A835FA3121A537E700EB8E26 /* ReservationViewController.swift */,
+			);
+			path = "My Reservation";
+			sourceTree = "<group>";
+		};
+		A826A8B421ABD14600756540 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C450BF1621AB8600002B8976 /* CollectionViewCell.swift */,
+				A826A8B121ABD09D00756540 /* Test.jpg */,
+				C450BF0F21AB80F7002B8976 /* CollectionViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		A835FA1321A535F400EB8E26 = {
 			isa = PBXGroup;
 			children = (
@@ -74,21 +96,18 @@
 		A835FA1E21A535F400EB8E26 /* seeksha */ = {
 			isa = PBXGroup;
 			children = (
+				A826A8B421ABD14600756540 /* Search */,
+				A826A8B321ABD11C00756540 /* My Reservation */,
 				C450BF1221AB832B002B8976 /* restaurantPic */,
 				C450BF1421AB8337002B8976 /* launchScreenText.png */,
-				A835FA3521A53A9000EB8E26 /* TableViewController.swift */,
 				A835FA1F21A535F400EB8E26 /* AppDelegate.swift */,
 				A835FA2121A535F400EB8E26 /* ViewController.swift */,
 				A835FA2321A535F400EB8E26 /* Main.storyboard */,
-				A835FA3121A537E700EB8E26 /* ReservationViewController.swift */,
 				A835FA2621A535F700EB8E26 /* Assets.xcassets */,
 				A835FA2821A535F700EB8E26 /* LaunchScreen.storyboard */,
 				A835FA2B21A535F700EB8E26 /* Info.plist */,
 				A835FA3321A5381700EB8E26 /* SettingViewController.swift */,
-				C4A74CB721A577D400F22407 /* ReservationTableViewController.swift */,
-				C450BF0F21AB80F7002B8976 /* CollectionViewController.swift */,
 				A835FA3721A5618E00EB8E26 /* Font */,
-				C450BF1621AB8600002B8976 /* CollectionViewCell.swift */,
 			);
 			path = seeksha;
 			sourceTree = "<group>";
@@ -167,6 +186,7 @@
 				C4A74CB621A5715300F22407 /* BMHANNAAir_otf.otf in Resources */,
 				A835FA2521A535F400EB8E26 /* Main.storyboard in Resources */,
 				C450BF1521AB8337002B8976 /* launchScreenText.png in Resources */,
+				A826A8B221ABD09E00756540 /* Test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
