@@ -1,8 +1,11 @@
 # Seeksha
 
-## 내 예약
+## 검색(Search)
+> 고객의 주변에 있는 음식점들을 보여줍니다.
+
+## 내 예약(Recent)
 > 예약한 예약목록을 확인 할 수 있습니다.
 > 날짜, 식당, 메뉴, 가격을 확인 할 수 있습니다.
 
-
-![seeksha_myReservation](https://i.imgur.com/02vGegk.png)
+## 더 보기(more)
+> 고객 또는 사장님으로 로그인 할 수 있습니다.
