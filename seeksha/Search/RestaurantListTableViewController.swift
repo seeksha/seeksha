@@ -12,6 +12,7 @@ class RestaurantListTableViewController: UITableViewController {
 
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -49,10 +50,39 @@ class RestaurantListTableViewController: UITableViewController {
        cell.textLabel?.text = resLists[indexPath.row]
        cell.detailTextLabel?.text = resDesLists[indexPath.row]
         
-        
+       
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+        let MenuIndex = indexPath.row
+     
+        //UIStoryboardSegue.init(identifier: "LToMSegue", source: UIViewController, destination: RestaurantMenuViewController)
+        let dest = RestaurantMenuViewController()
+        
+        self.present(dest, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "LToMSegue", sender: self)
+        
+        switch MenuIndex {
+        case 0:
+            dest.resNameLabel?.text = "\(MenuIndex)"
+        case 1:
+            dest.resNameLabel?.text = "\(MenuIndex)"
+        case 2:
+            dest.resNameLabel?.text = "\(MenuIndex)"
+        default:
+            break
+        }
+    }
+    
+    override func prepare(for segue:UIStoryboardSegue, sender:Any?) {
+        if segue.identifier == "LToMSegue",
+            let dest = segue.destination as? RestaurantMenuViewController
+        {
+            dest.resNameLabel?.text = "click"
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

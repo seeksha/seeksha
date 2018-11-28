@@ -18,7 +18,6 @@
         <!--Search View Controller-->
         <scene sceneID="jRR-Re-1Ho">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W1Z-4v-85n" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="81U-Vo-mhG" customClass="SearchViewController" customModule="seeksha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="97I-TL-Ul9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -115,6 +114,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="tyA-Zd-iUp"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W1Z-4v-85n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="844" y="80.50974512743629"/>
         </scene>
@@ -249,6 +249,45 @@
             </objects>
             <point key="canvasLocation" x="-262" y="835"/>
         </scene>
+        <!--Restaurant Menu View Controller-->
+        <scene sceneID="HTg-y1-cmV">
+            <objects>
+                <viewController id="1Us-1R-Wkq" customClass="RestaurantMenuViewController" customModule="seeksha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="avn-dP-aIx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NTC-NI-JqC">
+                                <rect key="frame" x="16" y="122" width="157" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="haA-V1-ZIx"/>
+                                    <constraint firstAttribute="width" constant="157" id="xks-tZ-EaO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkH-DV-Ybw">
+                                <rect key="frame" x="226" y="156" width="95" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BMHANNAAirOTF" family="BM HANNA Air OTF" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NTC-NI-JqC" firstAttribute="leading" secondItem="aqK-91-k3D" secondAttribute="leading" constant="16" id="6Q5-PC-siz"/>
+                            <constraint firstItem="NTC-NI-JqC" firstAttribute="top" secondItem="aqK-91-k3D" secondAttribute="top" constant="58" id="GpY-Hr-XSc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aqK-91-k3D"/>
+                    </view>
+                    <connections>
+                        <outlet property="resNameLabel" destination="gkH-DV-Ybw" id="qJV-8b-wRF"/>
+                        <outlet property="resThumb" destination="NTC-NI-JqC" id="h2x-FC-Z4I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KNR-c9-uIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2584.8000000000002" y="80.50974512743629"/>
+        </scene>
         <!--Restaurant List Table View Controller-->
         <scene sceneID="Kdm-g0-6MW">
             <objects>
@@ -281,6 +320,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="1Us-1R-Wkq" kind="show" identifier="LToMSegue" id="heD-ey-7ch"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -30,6 +30,7 @@
 		C4B9A87621AE921D007A7C1F /* KakaoTalk_Photo_2018-11-28-18-03-57.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B9A87221AE921D007A7C1F /* KakaoTalk_Photo_2018-11-28-18-03-57.png */; };
 		C4B9A87721AE921D007A7C1F /* KakaoTalk_Photo_2018-11-28-18-04-08.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B9A87321AE921D007A7C1F /* KakaoTalk_Photo_2018-11-28-18-04-08.png */; };
 		C4B9A87821AE921D007A7C1F /* KakaoTalk_Photo_2018-11-28-18-04-09.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B9A87421AE921D007A7C1F /* KakaoTalk_Photo_2018-11-28-18-04-09.png */; };
+		C4B9A88F21AEAD3A007A7C1F /* RestaurantMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B9A88E21AEAD3A007A7C1F /* RestaurantMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		C4B9A87221AE921D007A7C1F /* KakaoTalk_Photo_2018-11-28-18-03-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2018-11-28-18-03-57.png"; sourceTree = SOURCE_ROOT; };
 		C4B9A87321AE921D007A7C1F /* KakaoTalk_Photo_2018-11-28-18-04-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2018-11-28-18-04-08.png"; sourceTree = SOURCE_ROOT; };
 		C4B9A87421AE921D007A7C1F /* KakaoTalk_Photo_2018-11-28-18-04-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2018-11-28-18-04-09.png"; sourceTree = SOURCE_ROOT; };
+		C4B9A88E21AEAD3A007A7C1F /* RestaurantMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				C450BF0F21AB80F7002B8976 /* CollectionViewController.swift */,
 				C4B9A86A21AE8641007A7C1F /* SearchViewController.swift */,
 				C4B9A86C21AE8688007A7C1F /* RestaurantListTableViewController.swift */,
+				C4B9A88E21AEAD3A007A7C1F /* RestaurantMenuViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				C4B9A86F21AE8C12007A7C1F /* RestaurantList.swift in Sources */,
 				C450BF1721AB8600002B8976 /* CollectionViewCell.swift in Sources */,
 				C4B9A86B21AE8641007A7C1F /* SearchViewController.swift in Sources */,
+				C4B9A88F21AEAD3A007A7C1F /* RestaurantMenuViewController.swift in Sources */,
 				C4A74CB821A577D400F22407 /* ReservationTableViewController.swift in Sources */,
 				A835FA3221A537E700EB8E26 /* ReservationViewController.swift in Sources */,
 				C450BF1021AB80F7002B8976 /* CollectionViewController.swift in Sources */,
