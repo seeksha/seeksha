@@ -15,11 +15,11 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="jRR-Re-1Ho">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1Z-4v-85n" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="81U-Vo-mhG" sceneMemberID="viewController">
+                <viewController id="81U-Vo-mhG" customClass="SearchViewController" customModule="seeksha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="97I-TL-Ul9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,23 +30,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ln-c4-Uce">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ln-c4-Uce">
                                 <rect key="frame" x="30" y="184" width="131" height="137"/>
-                                <color key="backgroundColor" red="0.99147814512252808" green="0.12764877080917358" blue="0.0035949097946286201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="131" id="hYh-G9-Xyx"/>
                                     <constraint firstAttribute="height" constant="137" id="sBc-ro-CBd"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="hansikButton" image="KakaoTalk_Photo_2018-11-28-18-04-09.png" backgroundImage="KakaoTalk_Photo_2018-11-28-18-04-09.png"/>
+                                <connections>
+                                    <segue destination="mf9-6V-vQD" kind="show" identifier="hsSegue" id="FaE-Yn-BD7"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSY-yH-xWG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSY-yH-xWG">
                                 <rect key="frame" x="215" y="184" width="131" height="137"/>
-                                <color key="backgroundColor" red="0.99147814512252808" green="0.12764877080917358" blue="0.0035949097946286201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="137" id="0kR-1S-hjL"/>
                                     <constraint firstAttribute="width" constant="131" id="SxP-tJ-vtR"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="illsikButton" image="KakaoTalk_Photo_2018-11-28-18-04-10.png"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWR-yl-I46">
                                 <rect key="frame" x="74" y="507" width="42" height="21"/>
@@ -58,14 +59,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2V-bQ-j8D">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2V-bQ-j8D">
                                 <rect key="frame" x="30" y="330" width="131" height="137"/>
-                                <color key="backgroundColor" red="0.99147814512252808" green="0.12764877080917358" blue="0.0035949097946286201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="137" id="6HF-3z-Hou"/>
                                     <constraint firstAttribute="width" constant="131" id="kr8-2m-adT"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="jungsikButton" image="KakaoTalk_Photo_2018-11-28-18-03-57.png"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="분식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlL-ue-tLx">
                                 <rect key="frame" x="259" y="507" width="42" height="21"/>
@@ -77,14 +77,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6u-ry-485">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6u-ry-485">
                                 <rect key="frame" x="215" y="330" width="131" height="137"/>
-                                <color key="backgroundColor" red="0.99147814512252808" green="0.12764877080917358" blue="0.0035949097946286201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="137" id="duh-mh-6as"/>
                                     <constraint firstAttribute="width" constant="131" id="i6v-K6-8bK"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="bunsikButton" image="KakaoTalk_Photo_2018-11-28-18-04-08.png"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0f-Qs-TVc">
                                 <rect key="frame" x="261" y="349" width="40" height="26"/>
@@ -118,40 +117,6 @@
                 </viewController>
             </objects>
             <point key="canvasLocation" x="844" y="80.50974512743629"/>
-        </scene>
-        <!--Collection View Controller-->
-        <scene sceneID="8VJ-ur-HAM">
-            <objects>
-                <collectionViewController id="WV5-e3-woi" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Lxv-p9-aIb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dXE-PF-d6K">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rPq-8y-ZZ0">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="WV5-e3-woi" id="guu-bO-THn"/>
-                            <outlet property="delegate" destination="WV5-e3-woi" id="acZ-OW-vxw"/>
-                        </connections>
-                    </collectionView>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K3m-6f-l0R" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1637" y="77"/>
         </scene>
         <!--Reservation Table View Controller-->
         <scene sceneID="Xyj-QX-QQu">
@@ -284,5 +249,55 @@
             </objects>
             <point key="canvasLocation" x="-262" y="835"/>
         </scene>
+        <!--Restaurant List Table View Controller-->
+        <scene sceneID="Kdm-g0-6MW">
+            <objects>
+                <tableViewController id="mf9-6V-vQD" customClass="RestaurantListTableViewController" customModule="seeksha" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2jz-qL-GQH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="resListCell" textLabel="pja-pm-Hhl" detailTextLabel="3S9-qO-Qvt" style="IBUITableViewCellStyleSubtitle" id="4r6-6o-Fj9">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4r6-6o-Fj9" id="4Tx-Pv-OZ0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pja-pm-Hhl">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3S9-qO-Qvt">
+                                            <rect key="frame" x="16" y="25.5" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mf9-6V-vQD" id="vmp-3V-BCe"/>
+                            <outlet property="delegate" destination="mf9-6V-vQD" id="92j-Yn-Pwx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h35-K2-2PA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689" y="81"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="KakaoTalk_Photo_2018-11-28-18-03-57.png" width="131" height="137"/>
+        <image name="KakaoTalk_Photo_2018-11-28-18-04-08.png" width="131" height="137"/>
+        <image name="KakaoTalk_Photo_2018-11-28-18-04-09.png" width="131" height="137"/>
+        <image name="KakaoTalk_Photo_2018-11-28-18-04-10.png" width="131" height="137"/>
+    </resources>
 </document>
