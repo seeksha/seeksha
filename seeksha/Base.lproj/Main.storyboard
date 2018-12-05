@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONt-eA-sil">
-                                <rect key="frame" x="74" y="350" width="38.5" height="24"/>
+                                <rect key="frame" x="74" y="350" width="42" height="28"/>
                                 <fontDescription key="fontDescription" name="BMHANNAAirOTF" family="BM HANNA Air OTF" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,7 +35,7 @@
                                     <constraint firstAttribute="width" constant="131" id="hYh-G9-Xyx"/>
                                     <constraint firstAttribute="height" constant="137" id="sBc-ro-CBd"/>
                                 </constraints>
-                                <state key="normal" title="hansikButton" image="KakaoTalk_Photo_2018-11-28-18-04-09.png" backgroundImage="KakaoTalk_Photo_2018-11-28-18-04-09.png"/>
+                                <state key="normal" title="hansikButton" image="hansik"/>
                                 <connections>
                                     <segue destination="mf9-6V-vQD" kind="show" identifier="hsSegue" id="FaE-Yn-BD7"/>
                                 </connections>
@@ -46,7 +46,7 @@
                                     <constraint firstAttribute="height" constant="137" id="0kR-1S-hjL"/>
                                     <constraint firstAttribute="width" constant="131" id="SxP-tJ-vtR"/>
                                 </constraints>
-                                <state key="normal" title="illsikButton" image="KakaoTalk_Photo_2018-11-28-18-04-10.png"/>
+                                <state key="normal" title="illsikButton" image="illsik"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWR-yl-I46">
                                 <rect key="frame" x="74" y="507" width="42" height="21"/>
@@ -64,7 +64,7 @@
                                     <constraint firstAttribute="height" constant="137" id="6HF-3z-Hou"/>
                                     <constraint firstAttribute="width" constant="131" id="kr8-2m-adT"/>
                                 </constraints>
-                                <state key="normal" title="jungsikButton" image="KakaoTalk_Photo_2018-11-28-18-03-57.png"/>
+                                <state key="normal" title="jungsikButton" image="jungsik"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="분식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlL-ue-tLx">
                                 <rect key="frame" x="259" y="507" width="42" height="21"/>
@@ -82,10 +82,10 @@
                                     <constraint firstAttribute="height" constant="137" id="duh-mh-6as"/>
                                     <constraint firstAttribute="width" constant="131" id="i6v-K6-8bK"/>
                                 </constraints>
-                                <state key="normal" title="bunsikButton" image="KakaoTalk_Photo_2018-11-28-18-04-08.png"/>
+                                <state key="normal" title="bunsikButton" image="bunsik"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0f-Qs-TVc">
-                                <rect key="frame" x="261" y="349" width="40" height="26"/>
+                                <rect key="frame" x="256" y="349" width="45" height="30.5"/>
                                 <fontDescription key="fontDescription" name="BMHANNAAirOTF" family="BM HANNA Air OTF" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -113,6 +113,12 @@
                         <viewLayoutGuide key="safeArea" id="SB0-Mj-EqN"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="tyA-Zd-iUp"/>
+                    <connections>
+                        <outlet property="bunsikButton" destination="j6u-ry-485" id="aVs-9B-xCk"/>
+                        <outlet property="hansikButton" destination="1Ln-c4-Uce" id="CWg-os-dEo"/>
+                        <outlet property="illsickButton" destination="lSY-yH-xWG" id="25S-70-hWJ"/>
+                        <outlet property="jungsikButton" destination="C2V-bQ-j8D" id="bwI-tt-ys1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1Z-4v-85n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -337,9 +343,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="KakaoTalk_Photo_2018-11-28-18-03-57.png" width="131" height="137"/>
-        <image name="KakaoTalk_Photo_2018-11-28-18-04-08.png" width="131" height="137"/>
-        <image name="KakaoTalk_Photo_2018-11-28-18-04-09.png" width="131" height="137"/>
-        <image name="KakaoTalk_Photo_2018-11-28-18-04-10.png" width="131" height="137"/>
+        <image name="bunsik" width="131" height="137"/>
+        <image name="hansik" width="131" height="137"/>
+        <image name="illsik" width="131" height="137"/>
+        <image name="jungsik" width="131" height="137"/>
     </resources>
 </document>
