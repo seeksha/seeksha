@@ -12,11 +12,18 @@ class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //hansikButton.image =
 
         // Do any additional setup after loading the view.
     }
     
 
+    @IBOutlet weak var hansikButton: UIButton!
+    @IBOutlet weak var illsickButton: UIButton!
+    @IBOutlet weak var jungsikButton: UIButton!
+    @IBOutlet weak var bunsikButton: UIButton!
+    
     /*
     // MARK: - Navigation
 

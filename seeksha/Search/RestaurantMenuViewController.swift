@@ -8,15 +8,33 @@
 
 import UIKit
 
+var selected : String = ""
+
+protocol sendBackDelegate {
+    func dataReceived(data: String)
+}
+
 class RestaurantMenuViewController: UIViewController {
 
-    @IBOutlet weak var resThumb: UIImageView!
+
     @IBOutlet weak var resNameLabel: UILabel!
+    
+    var resName = ""
+    var delegate : sendBackDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.resNameLabel?.text = selected
+        
+      
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func returnView(_ sender: Any){
+        
+        dismiss(animated: true, completion: nil)
     }
     
 

@@ -13,6 +13,9 @@
         <array key="BMHANNAAir_otf.otf">
             <string>BMHANNAAirOTF</string>
         </array>
+        <array key="BMHANNA_11yrs_otf.otf">
+            <string>BMHANNA11yrsoldOTF</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Search View Controller-->
@@ -35,7 +38,7 @@
                                     <constraint firstAttribute="width" constant="131" id="hYh-G9-Xyx"/>
                                     <constraint firstAttribute="height" constant="137" id="sBc-ro-CBd"/>
                                 </constraints>
-                                <state key="normal" title="hansikButton" image="KakaoTalk_Photo_2018-11-28-18-04-09.png" backgroundImage="KakaoTalk_Photo_2018-11-28-18-04-09.png"/>
+                                <state key="normal" title="hansikButton" image="hansik"/>
                                 <connections>
                                     <segue destination="mf9-6V-vQD" kind="show" identifier="hsSegue" id="FaE-Yn-BD7"/>
                                 </connections>
@@ -46,7 +49,7 @@
                                     <constraint firstAttribute="height" constant="137" id="0kR-1S-hjL"/>
                                     <constraint firstAttribute="width" constant="131" id="SxP-tJ-vtR"/>
                                 </constraints>
-                                <state key="normal" title="illsikButton" image="KakaoTalk_Photo_2018-11-28-18-04-10.png"/>
+                                <state key="normal" title="illsikButton" image="illsik"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWR-yl-I46">
                                 <rect key="frame" x="74" y="507" width="42" height="21"/>
@@ -64,7 +67,7 @@
                                     <constraint firstAttribute="height" constant="137" id="6HF-3z-Hou"/>
                                     <constraint firstAttribute="width" constant="131" id="kr8-2m-adT"/>
                                 </constraints>
-                                <state key="normal" title="jungsikButton" image="KakaoTalk_Photo_2018-11-28-18-03-57.png"/>
+                                <state key="normal" title="jungsikButton" image="jungsik"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="분식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlL-ue-tLx">
                                 <rect key="frame" x="259" y="507" width="42" height="21"/>
@@ -82,7 +85,7 @@
                                     <constraint firstAttribute="height" constant="137" id="duh-mh-6as"/>
                                     <constraint firstAttribute="width" constant="131" id="i6v-K6-8bK"/>
                                 </constraints>
-                                <state key="normal" title="bunsikButton" image="KakaoTalk_Photo_2018-11-28-18-04-08.png"/>
+                                <state key="normal" title="bunsikButton" image="bunsik"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0f-Qs-TVc">
                                 <rect key="frame" x="261" y="349" width="40" height="26"/>
@@ -113,6 +116,12 @@
                         <viewLayoutGuide key="safeArea" id="SB0-Mj-EqN"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="tyA-Zd-iUp"/>
+                    <connections>
+                        <outlet property="bunsikButton" destination="j6u-ry-485" id="aVs-9B-xCk"/>
+                        <outlet property="hansikButton" destination="1Ln-c4-Uce" id="CWg-os-dEo"/>
+                        <outlet property="illsickButton" destination="lSY-yH-xWG" id="25S-70-hWJ"/>
+                        <outlet property="jungsikButton" destination="C2V-bQ-j8D" id="bwI-tt-ys1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1Z-4v-85n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,31 +266,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NTC-NI-JqC">
-                                <rect key="frame" x="16" y="122" width="157" height="104"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="104" id="haA-V1-ZIx"/>
-                                    <constraint firstAttribute="width" constant="157" id="xks-tZ-EaO"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkH-DV-Ybw">
-                                <rect key="frame" x="226" y="156" width="95" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BMHANNAAirOTF" family="BM HANNA Air OTF" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkH-DV-Ybw">
+                                <rect key="frame" x="154.5" y="125" width="66.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="BMHANNA11yrsoldOTF" family="BM HANNA 11yrs old OTF" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="NTC-NI-JqC" firstAttribute="leading" secondItem="aqK-91-k3D" secondAttribute="leading" constant="16" id="6Q5-PC-siz"/>
-                            <constraint firstItem="NTC-NI-JqC" firstAttribute="top" secondItem="aqK-91-k3D" secondAttribute="top" constant="58" id="GpY-Hr-XSc"/>
+                            <constraint firstItem="gkH-DV-Ybw" firstAttribute="top" secondItem="aqK-91-k3D" secondAttribute="top" constant="61" id="PMC-Rt-J8d"/>
+                            <constraint firstItem="gkH-DV-Ybw" firstAttribute="centerX" secondItem="avn-dP-aIx" secondAttribute="centerX" id="WbB-3t-HTJ"/>
+                            <constraint firstItem="gkH-DV-Ybw" firstAttribute="centerX" secondItem="avn-dP-aIx" secondAttribute="centerX" id="ah9-gn-1so"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aqK-91-k3D"/>
                     </view>
                     <connections>
                         <outlet property="resNameLabel" destination="gkH-DV-Ybw" id="qJV-8b-wRF"/>
-                        <outlet property="resThumb" destination="NTC-NI-JqC" id="h2x-FC-Z4I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNR-c9-uIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -337,9 +338,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="KakaoTalk_Photo_2018-11-28-18-03-57.png" width="131" height="137"/>
-        <image name="KakaoTalk_Photo_2018-11-28-18-04-08.png" width="131" height="137"/>
-        <image name="KakaoTalk_Photo_2018-11-28-18-04-09.png" width="131" height="137"/>
-        <image name="KakaoTalk_Photo_2018-11-28-18-04-10.png" width="131" height="137"/>
+        <image name="bunsik" width="131" height="137"/>
+        <image name="hansik" width="131" height="137"/>
+        <image name="illsik" width="131" height="137"/>
+        <image name="jungsik" width="131" height="137"/>
     </resources>
 </document>

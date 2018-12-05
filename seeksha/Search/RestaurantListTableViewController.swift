@@ -8,13 +8,54 @@
 
 import UIKit
 
-class RestaurantListTableViewController: UITableViewController {
+var resLists = ["맛나 감자탕", "엄청난 해장국", "목장과 바다"]
+var resDesLists = ["1인 감자탕" ,"선지해장국, 내장탕", "삼겹살"]
 
+class RestaurantListTableViewController: UITableViewController, sendBackDelegate{
     
+    func dataReceived(data: String) {
+        
+    }
     
+   
+    @IBAction func resDetail(sender: UITableViewCell){
+        
+        self.performSegue(withIdentifier: "resListCell", sender: self)
+        
+    }
+    
+    //UIStoryboardSegue.init(identifier: "LToMSegue", source: UIViewController, destination: RestaurantMenuViewController)
+    //        let dest = RestaurantMenuViewController()
+    //
+    //        self.present(dest, animated: true, completion: nil)
+    //        self.performSegue(withIdentifier: "LToMSegue", sender: self)
+    //
+    //        switch MenuIndex {
+    //        case 0:
+    //            dest.resNameLabel?.text = "\(MenuIndex)"
+    //        case 1:
+    //            dest.resNameLabel?.text = "\(MenuIndex)"
+    //        case 2:
+    //            dest.resNameLabel?.text = "\(MenuIndex)"
+    //        default:
+    //            break
+    //        }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender:Any?) {
+        print("2")
+        if segue.identifier == "LToMSegue"{
+        
+            let dest = segue.destination as! RestaurantMenuViewController
+    
+            dest.delegate = self
+        }
+    }
+    
+    //override func prep
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -22,10 +63,6 @@ class RestaurantListTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
-    var resLists = ["맛나 감자탕", "엄청난 해장국", "목장과 바다"]
-    var resDesLists = ["1인 감자탕" ,"선지해장국, 내장탕", "삼겹살"]
-        
     
     
     
@@ -57,32 +94,24 @@ class RestaurantListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
         let MenuIndex = indexPath.row
-     
-        //UIStoryboardSegue.init(identifier: "LToMSegue", source: UIViewController, destination: RestaurantMenuViewController)
-        let dest = RestaurantMenuViewController()
         
-        self.present(dest, animated: true, completion: nil)
-        self.performSegue(withIdentifier: "LToMSegue", sender: self)
+        selected = resLists[MenuIndex]
         
-        switch MenuIndex {
-        case 0:
-            dest.resNameLabel?.text = "\(MenuIndex)"
-        case 1:
-            dest.resNameLabel?.text = "\(MenuIndex)"
-        case 2:
-            dest.resNameLabel?.text = "\(MenuIndex)"
-        default:
-            break
-        }
+//        switch MenuIndex {
+//        case 0:
+//            menu.dest.resName = resLists[MenuIndex]
+//        case 1:
+//            menu.dest.resName = resLists[MenuIndex]
+//        case 2:
+//            menu.dest.resName = resLists[MenuIndex]
+//        default:
+//            break
+//        }
     }
     
-    override func prepare(for segue:UIStoryboardSegue, sender:Any?) {
-        if segue.identifier == "LToMSegue",
-            let dest = segue.destination as? RestaurantMenuViewController
-        {
-            dest.resNameLabel?.text = "click"
-        }
-    }
+
+    
+    
 
     /*
     // Override to support conditional editing of the table view.
